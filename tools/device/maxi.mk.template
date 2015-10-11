@@ -1,8 +1,8 @@
 # Release name
 PRODUCT_RELEASE_NAME := __DEVICE__
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common MaxiCM stuff.
+$(call inherit-product, vendor/maxi/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/__MANUFACTURER__/__DEVICE__/device___DEVICE__.mk)
