@@ -594,7 +594,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print("******************************************");
   script.Print("*   MaxiCM");
   script.Print("******************************************");
-  script.Print("*   Created By MaxiCM Team");
+  script.Print("*   Created By ("ro.build.date", OPTIONS.info_dict)");
   script.Print("******************************************");    
 
   builddate = GetBuildProp("ro.build.date", OPTIONS.info_dict)
