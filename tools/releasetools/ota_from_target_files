@@ -658,7 +658,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     script.Print("{*} Formatting /system")
     script.FormatPartition("/system")
     script.Mount("/system", recovery_mount_options)
-    if OPTIONS.recovery and not has_recovery_patch:
+    if not has_recovery_patch:
       script.UnpackPackageDir("recovery", "/system")
     script.Print("{*} Extracting /system")
     script.UnpackPackageDir("system", "/system")
@@ -674,9 +674,8 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
       common.ZipWriteStr(output_zip, "recovery/" + fn, data)
       system_items.Get("system/" + fn, dir=False)
 
-    if OPTIONS.recovery:
-      common.MakeRecoveryPatch(OPTIONS.input_tmp, output_sink,
-                             recovery_img, boot_img)
+    common.MakeRecoveryPatch(OPTIONS.input_tmp, output_sink,
+                             recovery_img, boot_img)g)
 
     script.Print("{*} Setting permissions")
     system_items.GetMetadata(input_zip)
