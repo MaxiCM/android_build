@@ -1748,7 +1748,7 @@ otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
 bacon: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(MAXI_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(MAXI_TARGET_PACKAGE) > $(MAXI_TARGET_PACKAGE).md5sum
-	@echo -e ${CL_CYN}"Package Complete: $(MAXI_TARGET_PACKAGE)"${CL_RST}
+	@echo -e ${CL_CYN}"MaxiPackage Complete: $(MAXI_TARGET_PACKAGE)"${CL_RST}
 	@echo -e ${CL_CYN} ""${CL_RST}
 	@echo -e ${CL_CYN} ""${CL_RST}
 	@echo -e ${CL_CYN} "   *                              *     "${CL_RST}
@@ -1759,8 +1759,8 @@ bacon: otapackage
 	@echo -e ${CL_CYN} "|  \/  |((_)_ ((_)\  (_)((/ __||  \/  | "${CL_RST}
 	@echo -e ${CL_CYN} "| |\/| |/ _' |\ \ /  | | | (__ | |\/| | "${CL_RST}
 	@echo -e ${CL_CYN} "|_|  |_|\__,_|/_\_\  |_|  \___||_|  |_| "${CL_RST}
-	@echo -e ${CL_CYN} ""${CL_RST}
-	@echo -e ${CL_CYN} ""${CL_RST}
+	@echo -e ${CL_CYN} "Awww Yeah! MaxiCM it's READY!"${CL_RST}
+	@echo -e ${CL_CYN} "www.maxicm.com"${CL_RST}
 	@echo -e ${CL_CYN} ""${CL_RST}
 	@echo -e ${CL_CYN} ""${CL_RST}
 
