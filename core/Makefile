@@ -1748,7 +1748,7 @@ otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
 bacon: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(MAXI_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(MAXI_TARGET_PACKAGE) > $(MAXI_TARGET_PACKAGE).md5sum
-	@echo -e ${CL_CYN}"MaxiPackage Complete: $(MAXI_TARGET_PACKAGE)"${CL_RST}
+	@echo -e ${CL_CYN}"Maxi-Package Complete: $(MAXI_TARGET_PACKAGE)"${CL_RST}
 	@echo -e ${CL_CYN} ""${CL_RST}
 	@echo -e ${CL_CYN} ""${CL_RST}
 	@echo -e ${CL_CYN} "   *                              *     "${CL_RST}
