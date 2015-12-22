@@ -592,6 +592,10 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.SetPermissionsRecursive("/tmp/install/bin", 0, 0, 0755, 0755, None, None)
 
   script.Print("******************************************");
+  script.Print("*       Jingle Bells, Jingle Bells        ");
+  script.Print("******************************************");
+  script.Print("*     Merry Christmas and Happy New Year  ");
+  script.Print("******************************************");
   script.Print("*                  MaxiCM                 ");
   script.Print("******************************************");
   script.Print("*              Android 5.1.1              ");
@@ -759,6 +763,8 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print("| |\/| |/ _, \ \/ / | |    | |\/| |");
   script.Print("| |  | | (_| |>  <| | |____| |  | |");
   script.Print("|_|  |_|\__,_/_/\_\_|\_____|_|  |_|");
+  script.Print("Do not forget to wish Merry Christmas and Happy New Year to their loved ones.");
+  script.Print("Merry Christmas and Happy New Year, MaxiCM users");
   script.ShowProgress(0.2, 10)
   device_specific.FullOTA_InstallEnd()
 
