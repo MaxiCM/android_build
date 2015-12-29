@@ -763,8 +763,8 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print("| |\/| |/ _, \ \/ / | |    | |\/| |");
   script.Print("| |  | | (_| |>  <| | |____| |  | |");
   script.Print("|_|  |_|\__,_/_/\_\_|\_____|_|  |_|");
-  script.Print("Do not forget to wish Merry Christmas and Happy New Year to their loved ones.");
-  script.Print("Merry Christmas and Happy New Year, MaxiCM users");
+  script.Print("Do not forget to wish a Happy New Year to their loved ones.");
+  script.Print("Happy New Year, MaxiCM users");
   script.ShowProgress(0.2, 10)
   device_specific.FullOTA_InstallEnd()
 

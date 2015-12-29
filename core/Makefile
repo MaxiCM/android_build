@@ -1762,7 +1762,7 @@ bacon: otapackage
 	@echo -e ${CL_CYN} "Awww Yeah! MaxiCM it's READY!"${CL_RST}
 	@echo -e ${CL_CYN} "www.maxicm.com"${CL_RST}
 	@echo -e ${CL_CYN} "Well maintainer, your job is ready"${CL_RST}
-	@echo -e ${CL_CYN} "Now go to enjoy a cup of hot chocolate"${CL_RST}
+	@echo -e ${CL_CYN} "Now go to enjoy a good food with your family"${CL_RST}
 	@echo -e ${CL_CYN} ""${CL_RST}
 
 # -----------------------------------------------------------------
