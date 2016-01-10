@@ -759,6 +759,11 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print("| |\/| |/ _, \ \/ / | |    | |\/| |");
   script.Print("| |  | | (_| |>  <| | |____| |  | |");
   script.Print("|_|  |_|\__,_/_/\_\_|\_____|_|  |_|");
+<<<<<<< HEAD
+=======
+  script.Print("Do not forget to wish Merry Christmas and Happy New Year to their loved ones.");
+  script.Print("Merry Christmas and Happy New Year, MaxiCM users");
+>>>>>>> parent of dff2cc7... Happy New Year MaxiCM
   script.ShowProgress(0.2, 10)
   device_specific.FullOTA_InstallEnd()
 
