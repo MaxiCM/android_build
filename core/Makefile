@@ -1039,14 +1039,14 @@ INTERNAL_SYSTEMIMAGE_FILES := $(filter $(TARGET_OUT)/%, \
     $(RECOVERY_RESOURCE_ZIP))
 
 systemimage-changelog: $(INTERNAL_SYSTEMIMAGE_FILES)
-    @echo -e "Making changelog!"
-    $(hide) APKCERTS=$(APKCERTS_FILE) ./vendor/maxi/tools/changelog
+	@echo -e "Making changelog!"
+	$(hide) APKCERTS=$(APKCERTS_FILE) ./vendor/maxi/tools/changelog
  
 .PHONY: systemimage-changelog
  
 systemimage-crusher: $(INTERNAL_SYSTEMIMAGE_FILES)
-    @echo -e "Optimizing PNGs ROM Size!"
-    $(hide) APKCERTS=$(APKCERTS_FILE) ./build/tools/releasetools/pngcrusher
+	@echo -e "Optimizing PNGs ROM Size!"
+	$(hide) APKCERTS=$(APKCERTS_FILE) ./build/tools/releasetools/pngcrusher
  
 .PHONY: systemimage-crusher
  
