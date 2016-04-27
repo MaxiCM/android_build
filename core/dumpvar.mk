@@ -61,6 +61,7 @@ endif
 
 endif # CALLED_FROM_SETUP
 
+TARGET_DISPLAY:= $(shell echo $(TARGET_PRODUCT) | sed -e 's|^maxi_||g')
 
 ifneq ($(PRINT_BUILD_CONFIG),)
 HOST_OS_EXTRA:=$(shell python -c "import platform; print(platform.platform())")
