@@ -64,7 +64,8 @@ endif # CALLED_FROM_SETUP
 
 ifneq ($(PRINT_BUILD_CONFIG),)
 HOST_OS_EXTRA:=$(shell python -c "import platform; print(platform.platform())")
-$(info ============================================)
+$(info ============== MaxiCM Team presents ==============)
+$(info ========== MaxiCM for $(TARGET_DISPLAY) ==============)
 $(info   PLATFORM_VERSION_CODENAME=$(PLATFORM_VERSION_CODENAME))
 $(info   PLATFORM_VERSION=$(PLATFORM_VERSION))
 $(info   MAXI_VERSION=$(MAXI_VERSION))
