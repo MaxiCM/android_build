@@ -49,6 +49,8 @@ def mangle_build_prop(prop, overrides):
 def mangle_default_prop(prop):
   # If ro.adb.secure is not 1, then enable adb on USB by default
   # (this is for eng builds)
+  prop.put("ro.secure", "0")
+  prop.put("ro.adb.secure", "0")
   if prop.get("ro.adb.secure") != "1":
     val = prop.get("persist.sys.usb.config")
     if val == "":
